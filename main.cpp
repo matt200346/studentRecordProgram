@@ -2,6 +2,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // Displays a menu that lets the user add a student record, find a record
 // or quit the program
+// 
 // finding the record currently works in O(n) as it is just linear search
 // 
 // future things to do:
@@ -9,6 +10,18 @@
 // add the abillity to display all records
 // sort the records or make the search faster
 // make the menu and record display nicer
+// 
+// possible future ideas to mess around with:
+// real GUI
+// graph the students by age
+// add more items to the records, such as sex or something
+// read files to store in the records
+// 
+// 
+// current issues:
+// _getch is windows only
+// user input is not validated
+// the menu function is in the main file (look at turning it into a header)
 // 
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -95,6 +108,7 @@ int main() {
 // basic menu
 void displayMenu() {
   std::printf("-----------------------------------------------------------\n");
+  std::printf("|                      -Fake School-                      |\n");
   std::printf("|             WELCOME PLEASE SELECT AN OPTION             |\n");
   std::printf("| 1. Add Record                                           |\n");
   std::printf("| 2. Find Record by ID                                    |\n");
