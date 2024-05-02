@@ -8,7 +8,7 @@
 // future things to do:
 // validate user input
 // add the abillity to display all records
-// sort the records or make the search faster
+// sort the records or make the search faster possibly implement a hash table
 // make the menu and record display nicer
 // 
 // possible future ideas to mess around with:
@@ -108,7 +108,7 @@ int main() {
 // basic menu
 void displayMenu() {
   std::printf("-----------------------------------------------------------\n");
-  std::printf("|                      -Fake School-                      |\n");
+  std::printf("|                     -(title here)-                      |\n");
   std::printf("|             WELCOME PLEASE SELECT AN OPTION             |\n");
   std::printf("| 1. Add Record                                           |\n");
   std::printf("| 2. Find Record by ID                                    |\n");
