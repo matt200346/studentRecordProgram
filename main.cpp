@@ -51,6 +51,7 @@ int main() {
       std::cout << "Please enter the age of the student: ";
       getline(std::cin, age);
 
+      // add record to the vector
       StudentRecord::addRecord(stoi(id), name, stoi(age), allRecords);
 
       std::cout << "Record added! Please press any key to continue\n";
@@ -62,6 +63,7 @@ int main() {
       // TODO validate user input
       std::cout << "Please enter the ID of the student: ";
       getline(std::cin, id);
+      // attempt to find a record matching id if not catch the error thrown
       try
       {
         temp = StudentRecord::fetchRecord(stoi(id), allRecords);
@@ -90,6 +92,7 @@ int main() {
 
 }
 
+// basic menu
 void displayMenu() {
   std::printf("-----------------------------------------------------------\n");
   std::printf("|             WELCOME PLEASE SELECT AN OPTION             |\n");

@@ -50,7 +50,6 @@ StudentRecord* StudentRecord::fetchRecord(int id, std::vector<StudentRecord*>& a
 
 //--------------getters------------------------
 
-// get the id from a specific student record
 int StudentRecord::getId() {
   return this->id;
 }
